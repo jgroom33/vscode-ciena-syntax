@@ -1,0 +1,41 @@
+{
+    "name": "ciena",
+    "displayName": "Ciena SAOS Syntax",
+    "description": "Ciena SAOS Syntax Highlighter",
+    "version": "0.0.1",
+    "publisher": "jgroom",
+    "icon": "images/ciena.jpg",
+    "license": "MIT",
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jgroom33/vscode-ciena-syntax.git"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "ciena",
+                "aliases": [
+                    "Ciena",
+                    "ciena"
+                ],
+                "extensions": [
+                    ".saos"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "ciena",
+                "scopeName": "text.ciena",
+                "path": "./syntaxes/ciena.tmLanguage"
+            }
+        ]
+    }
+}

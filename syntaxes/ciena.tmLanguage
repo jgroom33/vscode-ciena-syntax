@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>saos</string>
+	</array>
+	<key>name</key>
+	<string>Ciena</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>match</key>
+			<string>\b(create|add|delete|set|disable|enable|remove|on|off|all|advanced|true)\b</string>
+			<key>name</key>
+			<string>keyword.control.ciena</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b( vlan | port )\b</string>
+			<key>name</key>
+			<string>support.function.ciena</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>^(vlan|port|log flash|system|interface|private-forwarding-groups|ntp-client|benchmark generator|snmp|eoam|ssh server|chassis|user|traffic-services( cos-mapping)?|traffic-profiling( standard-profile)?|cfm|mstp|rstp|virtual-switch|virtual-circuit|lldp|aggregation|dhcp|ssh-server)</string>
+			<key>name</key>
+			<string>storage.type.ciena</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(frame-cos-map|resolved-cos-map|kpi-profile)</string>
+			<key>name</key>
+			<string>entity.name.type.ciena</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\s(acceptable-frame-type|pvid|egress-untag-vlan|edge-port|mode)</string>
+			<key>name</key>
+			<string>variable.parameter.ciena</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\s(name|cos-map|host-name) \S+</string>
+			<key>name</key>
+			<string>entity.name.function.ciena</string>
+		</dict>		
+		<dict>
+			<key>match</key>
+			<string>\b(yellow|green|red)\b</string>
+			<key>name</key>
+			<string>constant.numeric.ciena</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\d+\.\d+\.\d+\.\d+(/\d{1,2})?</string>
+			<key>name</key>
+			<string>constant.numeric.ciena</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b\d+\b</string>
+			<key>name</key>
+			<string>constant.numeric.ciena</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>[0-9a-fA-F]{0,4}:([0-9a-fA-F]{0,4}:)+[0-9a-fA-F]{0,4}(/\d{1,3})?</string>
+			<key>name</key>
+			<string>constant.numeric.ciena</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}|\h{1,4}\.\h{1,4}\.\h{1,4}(\.\h{1,2})?)\b</string>
+			<key>name</key>
+			<string>constant.numeric.ciena</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?:^! SW Package:.*)(saos\S+)$</string>
+			<key>name</key>
+			<string>constant.language.ciena</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>^!.*$</string>
+			<key>name</key>
+			<string>comment.line.bang.ciena</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(description|secret)\s\S+$</string>
+			<key>name</key>
+			<string>comment.documentation.ciena</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(description)\s\".*\"</string>
+			<key>name</key>
+			<string>comment.documentation.ciena</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>text.ciena</string>
+</dict>
+</plist>
