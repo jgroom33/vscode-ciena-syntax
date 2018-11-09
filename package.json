@@ -2,7 +2,7 @@
     "name": "ciena",
     "displayName": "Ciena SAOS Syntax",
     "description": "Ciena SAOS Syntax Highlighter",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "jgroom",
     "icon": "images/ciena.png",
     "license": "MIT",
