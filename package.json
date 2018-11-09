@@ -4,7 +4,7 @@
     "description": "Ciena SAOS Syntax Highlighter",
     "version": "0.0.1",
     "publisher": "jgroom",
-    "icon": "images/ciena.jpg",
+    "icon": "images/ciena.png",
     "license": "MIT",
     "engines": {
         "vscode": "^1.5.0"
